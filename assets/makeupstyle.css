@@ -1,0 +1,374 @@
+.makeup-div{
+    background-color: #431115;
+    padding: 4%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.img-head{
+    text-align: center;
+}
+body{
+    margin: auto;
+}
+.text-box{
+    background-color: black;
+    color: white;
+    line-height: 2;
+    padding: 2%;
+    font-size: 25px;
+    border-radius: 1%;
+    width: 30%;
+}
+.text-box p{
+    margin-left: 10%;
+}
+.text-box h1 {
+    margin-left: 10%;
+}
+.text-box button{
+    
+}
+.box-one {
+    font-size: x-small;
+}
+.box-three , .box-four{
+    font-size: 20px;
+}
+.btn-white{
+    padding: 3%;
+    font-weight: bolder;
+    border-radius: 0%;
+    margin-top: 5%;
+    margin-left: 10%;
+width: 35%;
+}
+
+.sec-two{
+    margin-top: 5%;
+
+}
+.best-seller{
+    margin-left: 3% !important;
+    line-height: 2;
+    font-size: 18px;
+}
+.best-seller p{
+
+}
+/* Slider */
+
+*{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+.box{
+    width: 300px;
+    /* height: auto; */
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    /* position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); */
+    margin: 25px ;
+}
+
+.slide-img{
+    height: 450px;
+    position: relative;
+}
+.slide-img:hover{
+background-image: url('images/blush-shade-5.png') !important;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+
+.detail-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.star{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        box-sizing: border-box;
+        margin-top: 6%;
+        margin-left: 6%;
+ 
+}
+.star-color{
+    color: orange;
+}
+.type{
+    display: flex;
+    flex-direction: column;
+}
+
+.type a{
+    color: #222222;
+    margin: 5px 0px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    padding-right: 8px;
+
+}
+
+
+.type span{
+    color: rgba(26, 26, 26, 0.5);
+}
+
+.price{
+    color: #333333;
+    font-weight: 600;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+.overlay{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buy-btn{
+    width: 160px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    color: #252525;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, .2);
+}
+
+.buy-btn:hover{
+    color: white;
+    background-color: palevioletred;
+    transition: all ease 0.3s;
+}
+
+.overlay{
+    visibility: hidden;
+}
+.slide-img:hover .overlay{
+    visibility: visible;
+    animation: fade 0.5s;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.sec-third{
+    background-color: #b23554;
+    display: flex;
+    margin-top: 5%;
+
+
+
+}
+.luscious-one{
+    width: 17%;
+}
+.luscious-one img{
+    width:100%;
+}
+.luscious-two{
+    width: 40%;
+}
+.luscious-two img{
+    width:100%;
+    height: 425px;
+}
+.luscious-three{
+    color: white;
+    padding: 8% 9%;
+    line-height: 2;
+}
+.luscious-three p{
+font-size: 20px;
+}
+
+
+
+/* Testimonial */
+
+
+.visuallyhidden {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    opacity: 0;
+    
+  }
+  
+  .sec-four {
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 2em;
+    background: rgba(0,0,0,.1);
+    margin-top: 5%;
+  }
+  
+  .card-carousel {
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 350px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+  }
+  
+  @media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+  }
+  
+  .card-carousel.smooth-return {
+    transition: all .2s ease;
+  }
+  
+  .card-carousel .card {
+    background: whitesmoke;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0,0,0,.5);
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card.highlight {
+    filter: brightness(1)
+  }
+  
+  
+  .card:nth-of-type(1) .image-container {
+      background-image: url("../image/modals/closeup-portrait-young-model-looking-camera-with-confidence-high-quality-photo.jpg");
+  }
+   
+  
+  .card:nth-of-type(2) .image-container {
+    background-image: url("../image/modals/blond-haired-fashion-model-pink-background.jpg")
+  }
+  
+  .card:nth-of-type(3) .image-container {
+    background-image: url("../image/modals/fashion-model-evening-makeup-with-smokey-eyes.jpg")
+  }
+  .card:nth-of-type(4) .image-container {
+    background-image: url("../image/modals/model-pink-warm-knit-sweatshirt-pink-background.jpg")
+  }
+  .card:nth-of-type(5) .image-container {
+    background-image: url("../image/modals/portrait-brunette-woman-with-beautiful-long-brown-hair-pretty-young-adult-girl-posing-studio-closeup-attractive-female-face.jpg")
+  }
+  
+  
+  
+  .image-container {
+    width: 8em;
+    height: 8em;
+    position: relative;
+    background-size: cover;
+    margin-bottom: 2em;
+    border-radius: 100%;
+    padding: 1em;
+    -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+  box-shadow: inset 0px 0px 17px 0px rgba(0,0,0,0.3);
+    
+  }
+  
+  .image-container::after {
+    content: "";
+    display: block;
+    width: 120%;
+    height: 120%;
+    border: solid 3px rgba(0,0,0,.1);
+    border-radius: 100%;
+    position: absolute;
+    top: calc(-10% - 3px);
+    left: calc(-10% - 3px);
+  }
+
+
+
+  /* Section-five */
+  .sec-five{
+    background-color: #c48a95;
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-evenly;
+  }
+  .glowing-essential{
+    padding: 102px 0 0;
+
+    font-weight: bolder;
+    font-family: "BBText Bold",Helvetica,Arial,sans-serif;
+    line-height: 1.5;
+  }
+  .gloww{
+    font-size: 15px;
+  }
+  .gloww-head{
+    font-size: 30px;
+  }
+  .gloww-p{
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  .gloww-btn{
+    font-size: 15px;
+    font-weight: lighter;
+    text-decoration: underline;
+    color: black;
+  }
+  
